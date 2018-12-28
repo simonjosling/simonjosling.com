@@ -1,0 +1,27 @@
+html {
+    height:"100%";
+}
+
+body, body * {
+    font-family: Helvetica, Arial, sans-serif;
+    height: "100%";
+}
+
+.back-image {
+    background-image: url("../assets/images/background.jpg");
+    height: "100%";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back-text {
+    height: "100%";
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3rem;
+}
+
+footer {
+    font-size: 0.5rem;
+}
