@@ -1,27 +1,43 @@
-html {
+html, body {
     height:"100%";
-}
-
-body, body * {
     font-family: Helvetica, Arial, sans-serif;
-    height: "100%";
 }
-
+/*
+body {
+    display: flex;
+    flex-direction: column;
+}
+*/
 .back-image {
+    flex: 1 0 auto;
     background-image: url("../assets/images/background.jpg");
-    height: "100%";
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .back-text {
-    height: "100%";
     color: #FFFFFF;
     text-align: center;
     font-size: 3rem;
+    height: 100%;
 }
 
-footer {
+.footer {
     font-size: 0.5rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 8.5in) 1fr;
+    height: 5in; /* temp fix */
+}
+article * { grid-column: 2 / 3; }
+
+.debug-centre {
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
 }
