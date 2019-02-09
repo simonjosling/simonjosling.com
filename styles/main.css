@@ -6,17 +6,42 @@ html, body * {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-body {
+/*body {
 	margin-top: 30px;
+}*/
+
+.head {
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	background-color: #333;
 }
 
-.navbar {
+#navbar {
 	overflow: hidden;
-	position: fixed;
-	top: 0;
 	width: 100%;
-	
 	background-color: #333;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+#navbar a{
+	color: #FFFFFF;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 100;
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 header, h1 {
@@ -41,6 +66,8 @@ article {
     grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
     /*height: 10in;*/
 	/*background-color: rgb(200,200,255);*/
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 
 .size-1 { grid-column: 4 / 5; }
