@@ -6,9 +6,6 @@ html, body * {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/*body {
-	margin-top: 30px;
-}*/
 
 .head {
 	padding-bottom: 0.5rem;
@@ -36,10 +33,54 @@ html, body * {
 }
 
 .bottom {
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 1rem;
+	padding: 1rem 2rem 1rem 2rem;
+	background-color: #333;
+	color: #FFFFFF;
 }
+
+
+/* Need to clean up the various input lines - use input:not[type=xxx] to exclude and standardise for rest */
+
+input {
+	color: #333;
+	border-radius: 0.25rem;
+	border: 2px solid #333;
+	font-size: 0.75rem;
+}
+
+input[type=text] {
+    margin: 0 0 0.5rem 0;
+	padding: 0.5rem;
+	width: 250px;
+}
+
+input[type=email] {
+    margin: 0 0 0.5rem 0;
+	padding: 0.5rem;
+	width: 250px;
+}
+
+input[type=submit] {
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	background-color: white;
+	width: 150px;
+}
+
+input:hover[type=submit] {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+input:not(:placeholder-shown):invalid {
+    border: 2px solid red;
+}
+
+.indicates-required {
+	font-size: 0.75rem;
+	padding-bottom: 0.25rem;
+}
+
 
 .sticky {
   position: fixed;
@@ -61,22 +102,22 @@ header, h1 {
 	font-size: 2rem;
 }
 
+h2 {
+	padding-bottom: 1rem;
+}
+
 p {
 	padding-top: 1rem;
 }
 
-/*-----Main section for flexbox and grid article components-----*/
 
-@media (max-width: 8.5in) { :root { font-size: 18px; } }
-@media (max-width: 5.0in) { :root { font-size: 16px; } }
+/*-----Main section for flexbox and grid article components-----*/
 
 article * { grid-column: start / end; }
 
 article {
     display: grid;
     grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
-    /*height: 10in;*/
-	/*background-color: rgb(200,200,255);*/
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 }
@@ -89,7 +130,7 @@ img.size-1, img.size-2, img.size-3, img.size-4 { width: 100%; }
 
 
 
-/*-----Article behaviour for smaller screen sizes-----*/
+/*----- Behaviour for smaller screen sizes-----*/
 
 @media (max-width: 8.5in)
 {
@@ -97,7 +138,11 @@ article
 	{
 	grid-template-columns: 1fr 5% [start] 15% 60% 15%[end] 5% 1fr;
 	}
+:root { font-size: 18px; }
 }
+
+
+@media (max-width: 5.0in) { :root { font-size: 16px; } }
 
 
 
