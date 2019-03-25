@@ -32,10 +32,18 @@ html, body * {
 	padding-right: 1rem;
 }
 
+#navbar a:hover {
+	color: grey;
+}
+
 .bottom {
 	padding: 1rem 2rem 1rem 2rem;
 	background-color: #333;
 	color: #FFFFFF;
+}
+
+.bottom a:hover {
+	color: grey;
 }
 
 
