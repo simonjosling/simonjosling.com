@@ -137,7 +137,10 @@ article {
 .size-4 { grid-column: 1 / 8; }
 img.size-1, img.size-2, img.size-3, img.size-4 { width: 100%; }
 
-
+img {
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+}
 
 /*----- Behaviour for smaller screen sizes-----*/
 
