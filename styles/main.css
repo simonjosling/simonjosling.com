@@ -161,7 +161,7 @@ article
 /*-----Background classes-----*/
 
 .back-image {
-    flex: 1 0 auto;
+   // flex: 1 0 auto;
     background-image: url("../assets/images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
