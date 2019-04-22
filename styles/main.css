@@ -156,7 +156,9 @@ article
 
 @media (max-width: 5.0in) { :root { font-size: 16px; } }
 
-
+article a {
+color: blue;
+}
 
 /*-----Background classes-----*/
 
