@@ -112,13 +112,41 @@ header, h1 {
 
 h2 {
 	padding-bottom: 1rem;
+	font-size:1.25rem;
 }
+
+h3 {
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	font-size:1rem;
+	font-style:italic;
+}
+
 
 p {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
 
+.divider1{
+        width: 50%;
+        margin: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        transform: rotate(5deg);
+        border-color: grey;
+     //   border-radius: ;
+    }
+    
+.divider2{
+        width: 50%;
+        margin: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        transform: rotate(5deg);
+        border-color: grey;
+     //   border-radius: ;
+    }
 
 /*-----Main section for flexbox and grid article components-----*/
 
@@ -156,9 +184,7 @@ article
 
 @media (max-width: 5.0in) { :root { font-size: 16px; } }
 
-article a {
-color: blue;
-}
+
 
 /*-----Background classes-----*/
 
