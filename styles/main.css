@@ -130,26 +130,12 @@ p {
 	padding-bottom: 0.5rem;
 }
 
-.divider1{
-        width: 50%;
-        margin: auto;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        transform: rotate(5deg);
-     //   border-color: grey;
-        background-color: blue;
-     //   border-radius: ;
-    }
-    
-.divider2{
-        width: 50%;
-        margin: auto;
-        margin-top: 0.5rem;
-        margin-bottom: 2rem;
-        transform: rotate(5deg);
-        border-color: grey;
-     //   border-radius: ;
-    }
+ul {
+	padding-left: 1rem;
+}
+
+ol {
+	padding-left: 1rem;
 
 .div-stopper:after
 {
