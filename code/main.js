@@ -84,19 +84,3 @@ document.addEventListener("DOMContentLoaded", function() {
     //end fallback method
   }
 });
-
-// Event listener to instantiate VRview iframe after page load for id vrviewtiticaca1
-
-window.addEventListener('load', onVrViewLoad);
-
-function onVrViewLoad() {
-  // Selector '#vrviewtiticaca1' finds element with id 'vrview'vrviewtiticaca1'.
-  var vrView = new VRView.Player('#vrviewtiticaca1', {
-    image: '/../assets/images/testvr.jpg',
-    is_stereo: false
-    width: 500px; //defines iframe width
-    height: 500px; //defines iframe height
-  });
-}
-
-// End function for id vrviewtiticaca1
