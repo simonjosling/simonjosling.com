@@ -46,6 +46,13 @@ html, body * {
 	color: grey;
 }
 
+// last id offset by 1.5rem to account for navbar height
+
+#last {
+	padding: 1.5rem;
+	margin-top: -1.5rem;
+}
+
 
 /* Need to clean up the various input lines - use input:not[type=xxx] to exclude and standardise for rest */
 
