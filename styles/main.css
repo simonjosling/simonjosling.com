@@ -4,6 +4,7 @@
 html, body * {
     height:"100%";
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -46,10 +47,10 @@ html, body * {
 	color: grey;
 }
 
-// last id offset by 1.5rem to account for navbar height
+/* last id offset by 1.5rem to account for navbar height */
 
 #last {
-	padding: 1.5rem;
+	padding-top: 1.5rem;
 	margin-top: -1.5rem;
 }
 
@@ -96,20 +97,26 @@ input:not(:placeholder-shown):invalid {
 	padding-bottom: 0.25rem;
 }
 
+/* Sticky nav classes */
+
+#nav-wrap {
+	height:2rem;
+}
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .content {
-	padding: 16px;
+	padding-top: 1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
-.sticky + .content {
-  padding-top: 60px;
-}
+
+/* Styling */
 
 header, h1 {
 	color: #FFFFFF;
@@ -199,7 +206,6 @@ ol {
     position: absolute;
     top: 0;
     width: 100%;
-  /*  background-color: blue; -----debug code ---*/
     }
 
 /*-----Main section for flexbox and grid article components-----*/
@@ -249,6 +255,8 @@ article
     background-repeat: no-repeat;
     background-size: cover;
 	background-attachment: fixed;
+	background-color: black;
+//	position: fixed;
 }
 
 
