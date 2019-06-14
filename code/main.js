@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }
-    //move fold for lazy load - 1920h resolution for iphone6+ and galaxy s6
+    //move fold for lazy load - 1920px resolution for iphone6+ and galaxy s6
     		,{rootMargin: "0px 0px 1920px 0px"}
     //Uncode this when proved working without
     );
