@@ -54,7 +54,6 @@ html, body * {
 	margin-top: -1.5rem;
 }
 
-
 /* Need to clean up the various input lines - use input:not[type=xxx] to exclude and standardise for rest */
 
 input {
@@ -100,7 +99,7 @@ input:not(:placeholder-shown):invalid {
 /* Sticky nav classes */
 
 #nav-wrap {
-	height:2rem;
+	height: 2rem;
 }
 
 .sticky {
