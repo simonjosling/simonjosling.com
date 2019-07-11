@@ -54,6 +54,7 @@ html, body * {
 	margin-top: -1.5rem;
 }
 
+
 /* Need to clean up the various input lines - use input:not[type=xxx] to exclude and standardise for rest */
 
 input {
@@ -98,14 +99,16 @@ input:not(:placeholder-shown):invalid {
 
 /* Sticky nav classes */
 
+/* this wrap div keeps a placeholder height set at 2rem for when navbar sticks to prevent jank*/
 #nav-wrap {
-	height: 2rem;
+	height:2rem;
 }
 
 .sticky {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 2;. /* z-index must be 1 higher than greatest used elsewhere - set for article divider at 2 */
 }
 
 .content {
