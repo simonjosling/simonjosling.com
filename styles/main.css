@@ -3,8 +3,9 @@
 
 html, body * {
     height:"100%";
-    font-family: Helvetica, Arial, sans-serif;
-    scroll-behavior: smooth;
+  /*  font-family: 'Helvetica' , 'Arial', sans-serif; */
+	font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica', sans-serif;
+	scroll-behavior: smooth;
 }
 
 
@@ -31,6 +32,7 @@ html, body * {
 	color: #FFFFFF;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	text-decoration: none;
 }
 
 #navbar a:hover {
@@ -152,6 +154,12 @@ ul {
 
 ol {
 	padding-left: 1rem;
+}
+
+a {
+
+	text-decoration:underline;
+	color: blue;
 }
 
 .div-stopper:after
