@@ -41,12 +41,30 @@
 	<div id="nav-wrap">
 		<div id="navbar">
 			<a href=#top>Home</a>
-			<a href=#last>Latest Post</a>
-			<a href=#mc_embed_signup>Mailing list</a>
+			<a href=#last>Last Post</a>
+			<a href=#mc_embed_signup>Mail list</a>
+			<a href=#mapwrap>Map</a>
 		</div>
 	</div>
 
 	<div class="content">
+	
+	<!-- Map section -->
+	
+	<div id="mapwrap">
+		<button id="btnAsia">Asia</button>
+		<button id="btnAmerica">South America</button>
+		<noscript>
+			<p>Sorry, the interactive map has failed to load. Please make sure JavaScript is enabled in your browser.</p>
+		</noscript>
+		<div id="map"><p>[Interactive map]</p></div>
+		<script src="code/map.js"></script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrFkI8Fa6EESxQGGNMqmeOcoXD1ml_p1s&callback=initMap">
+		</script>
+	</div>
+	
+	<!-- End map section -->
 		
 		<article id="last">
 			
