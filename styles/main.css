@@ -5,7 +5,7 @@ html, body * {
     height:"100%";
   /*  font-family: 'Helvetica' , 'Arial', sans-serif; */
 	font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica', sans-serif;
-	scroll-behavior: smooth;
+//	scroll-behavior: smooth;
 }
 
 
@@ -21,6 +21,7 @@ html, body * {
 	background-color: #333;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+	z-index:52;
 }
 
 #intro p{
@@ -51,19 +52,28 @@ html, body * {
 
 /* last id offset by 1.5rem to account for navbar height */
 
-#last {
-	padding-top: 1.5rem;
-	margin-top: -1.5rem;
+#last, #mapwrap {
+	padding-top: 2rem;
+/*	margin-top: -2rem; */
 }
-
 
 /* Need to clean up the various input lines - use input:not[type=xxx] to exclude and standardise for rest */
 
-input {
+input, button {
 	color: #333;
 	border-radius: 0.25rem;
 	border: 2px solid #333;
 	font-size: 0.75rem;
+}
+button {	
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	background-color: white;
+}
+
+button:hover {
+	background-color: grey;
+	color: white;
+	cursor: pointer;
 }
 
 input[type=text] {
@@ -110,7 +120,7 @@ input:not(:placeholder-shown):invalid {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 2;. /* z-index must be 1 higher than greatest used elsewhere - set for article divider at 2 */
+	z-index: 52;. /* z-index must be 1 higher than greatest used elsewhere - set for article divider at 2 */
 }
 
 .content {
@@ -157,9 +167,13 @@ ol {
 }
 
 a {
-
 	text-decoration:underline;
 	color: blue;
+}
+
+.bottom a {
+	text-decoration:none;
+	color: white;
 }
 
 .div-stopper:after
@@ -217,6 +231,34 @@ a {
     top: 0;
     width: 100%;
     }
+    
+    
+/*-----Map styling-----*/
+
+#map {
+	height: 400px;
+}
+      
+#mapwrap {
+	height: 400px;
+	position: relative;
+}
+
+#btnAsia {
+	position: absolute;
+	z-index: 51;
+	top: 3rem;
+	right: 0.5rem;
+	margin-top: 2rem;
+}
+      
+#btnAmerica {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	z-index: 50;
+	margin-top: 2rem;
+}
 
 /*-----Main section for flexbox and grid article components-----*/
 
