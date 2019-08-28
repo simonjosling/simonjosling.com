@@ -44,7 +44,10 @@ var locationsAmerica = [
 	['Khao Yai',14.4392,101.3725,27,'#khaoyai'],
 	['Siem Reap',13.3573,103.854,28,'#siemreap'],
 	['Kratie',12.4897,106.0288,29,'#kratie'],
-	['Chau Doc',10.7022,105.1087,30,'#chaudoc']
+	['Chau Doc',10.7022,105.1087,30,'#chaudoc'],
+	['Saigon',10.8231,106.6297,31,'#saigon-hoian'],
+	['Hoi An',15.8801,108.338,32,'#saigon-hoian'],
+	['Hué',16.4637,107.5909,33,'#last']
 	
    ];
 
@@ -64,7 +67,7 @@ function setMarkers(map) {
     var marker = new google.maps.Marker({
       position: {lat: location[1], lng: location[2]},
       map: map,
-  	icon: 'https://simonjosling.com/assets/images/pinvector.svg',
+      icon: 'https://simonjosling.com/assets/images/pinvector.svg',
       title: location[0],
       zIndex: location[3],
       url: location[4]
