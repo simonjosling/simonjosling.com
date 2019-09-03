@@ -9,7 +9,7 @@ var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyNav() {
-  if (window.pageYOffset >= sticky) {
+	if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }
-    //move fold for lazy load - 1920px resolution for iphone6+ and galaxy s6
-    		,{rootMargin: "0px 0px 1920px 0px"}
+    //move fold for lazy load - 3000px resolution based on more than 1 fold of 1920px for iphone6+ and galaxy s6
+    		,{rootMargin: "0px 0px 3000px 0px"}
     //Uncode this when proved working without
     );
 
