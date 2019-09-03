@@ -168,7 +168,9 @@ ol {
 
 a {
 	text-decoration:underline;
-	color: blue;
+	text-decoration-color: blue;
+	text-decoration-thickness: .125rem;
+	text-underline-offset: 1.5px;
 }
 
 .bottom a {
