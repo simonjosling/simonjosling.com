@@ -47,7 +47,9 @@ var locationsAmerica = [
 	['Chau Doc',10.7022,105.1087,30,'#chaudoc'],
 	['Saigon',10.8231,106.6297,31,'#saigon-hoian'],
 	['Hoi An',15.8801,108.338,32,'#saigon-hoian'],
-	['Hué',16.4637,107.5909,33,'#last']
+	['Hué',16.4637,107.5909,33,'#hue'],
+	['Phong Nha',17.5908,106.2834,35,'#phongnha'],
+	['Cat Ba',20.8,106.9997,36,'#last']
 	
    ];
 
