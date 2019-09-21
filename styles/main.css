@@ -248,6 +248,14 @@ a {
 
 #btnAsia {
 	position: absolute;
+	z-index: 52;
+	top: 5.5rem;
+	right: 0.5rem;
+	margin-top: 2rem;
+}
+
+#btnOceania {
+	position: absolute;
 	z-index: 51;
 	top: 3rem;
 	right: 0.5rem;
