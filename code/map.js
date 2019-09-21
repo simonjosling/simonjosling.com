@@ -2,8 +2,8 @@
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 5,
-    center: {lat: 17, lng: 104},
+    zoom: 3,
+    center: {lat: -30, lng: 160},
     disableDefaultUI: true,
     zoomControl: true
   });
@@ -50,9 +50,11 @@ var locationsAmerica = [
 	['Hué',16.4637,107.5909,33,'#hue'],
 	['Phong Nha',17.5908,106.2834,35,'#phongnha'],
 	['Cat Ba',20.8,106.9997,36,'#catba'],
-	['Hanoi',21.0278,105.8342,37,'#hanoi']
-	
-   ];
+	['Hanoi',21.0278,105.8342,37,'#hanoi'],
+	['Sydney',-33.8688,151.2093,38,'#sydney'],
+	['Cairns',-16.9186,145.7781,39,'#last']
+	   
+];
 
 // Add markers to the map.
 function setMarkers(map) {
@@ -93,6 +95,10 @@ function setMarkers(map) {
     });
     google.maps.event.addDomListener(document.getElementById('btnAmerica'), 'click', function () {
     	map.setCenter(new google.maps.LatLng(-10,-60));
+    	map.setZoom(3);
+    });
+    google.maps.event.addDomListener(document.getElementById('btnOceania'), 'click', function () {
+    	map.setCenter(new google.maps.LatLng(-30,160));
     	map.setZoom(3);
     });
   }
