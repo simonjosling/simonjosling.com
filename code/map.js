@@ -53,8 +53,8 @@ var locationsAmerica = [
 	['Hanoi',21.0278,105.8342,37,'#hanoi'],
 	['Sydney',-33.8688,151.2093,38,'#sydney'],
 	['Cairns',-16.9186,145.7781,39,'#cairns']
-	['Mission Beach',-17.8694,146.1069,40,'#last']
-	['Paluma National Park',-19.0919,146.2706,41,'#paluma']
+	['Mission Beach',-17.8694,146.1069,40,'#last'],
+	['Paluma National Park',-19.0919,146.2706,41,'#paluma'],
 //	['The Whitsundays',-20.2824,149.0389,42,'#whitsundays']
 	['Agnes Water and 1770',-24.2125,151.9033,43,'#agnes water']
 ];
