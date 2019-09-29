@@ -55,7 +55,8 @@ var locationsAmerica = [
 	['Cairns',-16.9186,145.7781,39,'#cairns'],
 	['Mission Beach',-17.8694,146.1069,40,'#last'],
 	['Paluma National Park',-19.0919,146.2706,41,'#paluma'],
-	['Agnes Water and 1770',-24.2125,151.9033,43,'#agnes-water']
+	['Agnes Water and 1770',-24.2125,151.9033,43,'#agnes-water'],
+	['The Whitsundays',-20.2824,149.0389,42,'#whitsundays']
 ];
 
 // Add markers to the map.
