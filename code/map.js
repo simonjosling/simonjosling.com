@@ -56,7 +56,8 @@ var locationsAmerica = [
 	['Mission Beach',-17.8694,146.1069,40,'#last'],
 	['Paluma National Park',-19.0919,146.2706,41,'#paluma'],
 	['Agnes Water and 1770',-24.2125,151.9033,43,'#agnes-water'],
-	['The Whitsundays',-20.2824,149.0389,42,'#whitsundays']
+	['The Whitsundays',-20.2824,149.0389,42,'#whitsundays'],
+	['Hervey Bay',-25.2882,152.7677,44,'#hervey bay']
 ];
 
 // Add markers to the map.
