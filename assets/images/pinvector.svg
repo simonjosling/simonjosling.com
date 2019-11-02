@@ -4,6 +4,6 @@
 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
 <polygon fill="#C5CAE9" points="26,41 24,46 22,41 22,14 26,14 "/>
-<circle fill="#FF5722" cx="24" cy="10" r="8"/>
+<circle fill="#333" cx="24" cy="10" r="8"/>
 <path fill="none" stroke="#FFAB91" stroke-width="2" stroke-linecap="round" d="M19,10c0-2.761,2.238-5,5-5"/>
 </svg>
