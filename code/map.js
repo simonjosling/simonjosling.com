@@ -58,8 +58,9 @@ var locationsAmerica = [
 	['Agnes Water and 1770',-24.2125,151.9033,43,'#agnes-water'],
 	['The Whitsundays',-20.2824,149.0389,42,'#whitsundays'],
 	['Hervey Bay',-25.2882,152.7677,44,'#hervey bay'],
-	['Noosa',-26.3645,152.9677,45,'#noosa'],
-	['Brisbane',-27.4698,153.0251,46,'#last']
+	['Noosa',-26.3645,152.9677,45,'#brisbane'],
+	['Brisbane',-27.4698,153.0251,46,'#brisbane'],
+	['Queenstown',-45.0312,168.6626,46,'#last']
 ];
 
 // Add markers to the map.
