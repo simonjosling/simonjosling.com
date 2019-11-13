@@ -16,7 +16,7 @@ function stickyNav() {
   }
 }
 
-//lazy load script
+//lazy load scripts
 
 document.addEventListener("DOMContentLoaded", function() {
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     //move fold for lazy load - 3000px resolution based on more than 1 fold of 1920px for iphone6+ and galaxy s6
     		,{rootMargin: "0px 0px 3000px 0px"}
-    //Uncode this when proved working without
     );
 
     lazyImages.forEach(function(lazyImage) {
@@ -82,5 +81,36 @@ document.addEventListener("DOMContentLoaded", function() {
     
    
     //end fallback method
+  }
+});
+
+// Laxy load script for videos
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyVideos = [].slice.call(document.querySelectorAll("video.vlazy"));
+
+  if ("IntersectionObserver" in window) {
+    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(video) {
+        if (video.isIntersecting) {
+          for (var source in video.target.children) {
+            var videoSource = video.target.children[source];
+            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+              videoSource.src = videoSource.dataset.src;
+            }
+          }
+
+          video.target.load();
+          video.target.classList.remove("lazy");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    }
+    ,{rootMargin: "0px 0px 3000px 0px"}
+    );
+
+    lazyVideos.forEach(function(lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
   }
 });
