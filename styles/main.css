@@ -4,8 +4,8 @@
 html, body * {
     height:"100%";
   /*  font-family: 'Helvetica' , 'Arial', sans-serif; */
-	font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica', sans-serif;
-//	scroll-behavior: smooth;
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+/*	scroll-behavior: smooth;*/
 }
 
 
@@ -120,7 +120,7 @@ input:not(:placeholder-shown):invalid {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 52;. /* z-index must be 1 higher than greatest used elsewhere - set for article divider at 2 */
+	z-index: 52; /* z-index must be 1 higher than greatest used elsewhere - set for article divider at 2 */
 }
 
 .content {
@@ -311,14 +311,14 @@ article
 /*-----Background classes-----*/
 
 .back-image {
-   // flex: 1 0 auto;
+   /* flex: 1 0 auto; */
     background-image: url("../assets/images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	background-attachment: fixed;
 	background-color: black;
-//	position: fixed;
+/*	position: fixed; */
 }
 
 
