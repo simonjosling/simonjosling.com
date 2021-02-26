@@ -3,10 +3,11 @@
 
 html, body * {
     height:"100%";
-  /*  font-family: 'Helvetica' , 'Arial', sans-serif; */
-	font-family: 'Open Sans', 'Helvetica', sans-serif;
-	font-display: optional;
-/*	scroll-behavior: smooth;*/
+	@font-face {
+		font-family: 'Open Sans', 'Helvetica', sans-serif;
+		src: url(https://fonts.googleapis.com/css?family=Open+Sans);
+		font-display: optional;
+	}
 }
 
 
