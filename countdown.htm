@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown to Kazakhstan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipdown@latest/dist/flipdown.min.css">
+    <style>
+        .countdown-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+        }
+        .countdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>    
+    <main class="container">
+        <section>
+            <h1>Countdown to Kazakhstan</h1>
+            <p>How long until we fly</p>
+        </section>
+        
+        <section class="countdown-container">
+            <div class="countdown-item">
+                <h3>Jack - TK30</h3>
+                <div id="flipdown1" class="flipdown"></div>
+            </div>
+            <div class="countdown-item">
+                <h3>Will - TK1752</h3>
+                <div id="flipdown2" class="flipdown"></div>
+            </div>
+            <div class="countdown-item">
+                <h3>Simon - TK1998</h3>
+                <div id="flipdown3" class="flipdown"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="container">
+        <small>I like</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flipdown@latest/dist/flipdown.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const times = [
+                new Date("2025-02-20T00:30:00Z").getTime() / 1000,
+                new Date("2025-02-20T12:05:00Z").getTime() / 1000,
+                new Date("2025-02-21T16:55:00Z").getTime() / 1000
+            ];
+            
+            console.log("Countdown timestamps:", times);
+
+            new FlipDown(times[0], 'flipdown1').start();
+            new FlipDown(times[1], 'flipdown2').start();
+            new FlipDown(times[2], 'flipdown3').start();
+        });
+    </script>
+</body>
+</html>
