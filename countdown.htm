@@ -17,11 +17,24 @@
         .countdown-item {
             display: flex;
             flex-direction: column;
+            align-content: center;
+        }
+        .forecast-container {
+            margin-top: 2rem;
+            text-align: center;
             align-items: center;
         }
     </style>
 </head>
-<body>    
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>Countdown to Kazakhstan</strong></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main class="container">
         <section>
             <h1>Countdown to Kazakhstan</h1>
@@ -41,6 +54,11 @@
                 <h3>Simon - TK1998</h3>
                 <div id="flipdown3" class="flipdown"></div>
             </div>
+        </section>
+
+        <section class="forecast-container">
+            <h2>Shymbulak Snow Forecast</h2>
+            <link href="//www.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe allowtransparency="true" frameborder="0" height="272" marginheight="0" marginwidth="0" scrolling="no" src="//www.snow-forecast.com/resorts/Chimbulak/forecasts/feed/mid/m" style="overflow:hidden;border:none;" width="469"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><a href="https://www.snow-forecast.com/"><img alt="Snow Forecast" height="40" src="//www.snow-forecast.com/images/feed/snowlogo-150.png" width="150" /></a><p id="cmt">View detailed snow forecast for <a href="https://www.snow-forecast.com/resorts/Chimbulak/6day/mid">Shymbulak</a> at:<br /><a href="https://www.snow-forecast.com/"><strong>snow-forecast.com</strong></a></p><div style="clear: both;"></div></div></div>
         </section>
     </main>
     
